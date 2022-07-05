@@ -1,5 +1,7 @@
 package com.example.courseproject.expense.model;
 
+import java.time.Instant;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,11 +14,11 @@ import javax.persistence.Table;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="expense")
+@Table(name="`expense`")
 @Data
 public class Expense {
     @Id
-    private long id;
+    private Long id;
     private Instant expensedate;
     private String descript;
     @ManyToOne
